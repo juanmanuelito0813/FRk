@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Kindebook</title>
+    </head>
+    <body>
+	
+	
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	
+	
+<style type="text/css">
+body,html{
+height:100%; /*Siempre es necesario cuando trabajamos con alturas*/
+}
+ #inferior{
+    color: #FFF;
+    background: #ed5565;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 50px;
+    z-index: 0;
+ }
+ 
+  #superior{
+    color: #FFF;
+    background: #1ab394;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    z-index: 0;
+    top: -1px;
+ }
+ 
+ .contenedorprincipal{
+ position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;
+ }
+ 
+</style>
+ 
+
+	  <div id="cartago">
+ 
+			  <div id="inferior">&nbsp;</div>
+	  <div style="text-align:center">
+		<img src="school.png" style="width:75%;margin-top: 100px;" />
+		<br>
+		<img src="cargador.gif"  style="width:200px; margin-top: 50px;" />
+	  </div>
+	  <div id="superior">&nbsp;</div>
+ 
+	  
+</div>
+	  
+	  
+	  
+		<script>
+		
+		setTimeout(function() {
+			$('#cartago').fadeOut(2000);
+		}, 5000);
+		
+				 setTimeout(function() {
+						
+						$('#corpse').fadeIn(2000);
+						//document.getElementById('corpse').style.display = 'block';
+						//document.getElementById('cartago').style.display = 'none';
+					}, 7000);
+		</script>
+	  
+
+	  <iframe id="corpse" class="contenedorprincipal" style="display:none" src="http://50.21.186.193:8086/Login/"></iframe> 
+     
+		
+		
+		<script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

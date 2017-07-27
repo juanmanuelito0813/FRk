@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Kindebook</name>
+    <description>
+        Kindebook
+    </description>
+    <author email="juanma@bitrain.mx" href="https://www.bitrain.mx/">
+        Juan Manuel Martínez Arelio
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+	<access origin="http://50.21.186.193:8092/" />
+	<allow-navigation href="http://50.21.186.193:8092/*" />
+	
+	<plugin name="cordova-plugin-whitelist" version="1"/>
+<allow-intent href="http://*/*"/>
+<allow-intent href="https://*/*"/>
+<allow-intent href="tel:*"/>
+<allow-intent href="sms:*"/>
+<allow-intent href="mailto:*"/>
+<allow-intent href="geo:*"/>
+<platform name="android">
+    <allow-intent href="market:*"/>
+	
+
+	
+	
+</platform>
+
+<icon src="KB.png" platform="android" qualifier="ldpi" />
+<icon src="KB.png" platform="android" qualifier="mdpi" />
+<icon src="KB.png" platform="android" qualifier="hdpi" />
+<icon src="KB.png" platform="android" qualifier="xhdpi" />
+<icon src="KB.png" platform="android" qualifier="xxhdpi" />
+<icon src="KB.png" platform="android" qualifier="fr-xxhdpi" />
+
+
+<platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+</platform>
+
+
+</widget>
